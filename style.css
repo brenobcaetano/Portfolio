@@ -1,0 +1,690 @@
+/* General Itens */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    cursor: default;
+}
+
+h1{
+    font-weight: 400;
+}
+
+
+
+/* Header */
+
+header{
+    width: 225px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    margin-top: 0px;
+    overflow: auto;
+    cursor: default;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly ;
+
+}
+
+#imgDiv{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#face{
+    width: 125px;
+    height: 125px;
+}
+
+
+#infoHeader{
+    width: 220px;
+    height: 125px;
+}
+#name{
+    font-size: 25px;
+}
+
+.subTHeader{
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+#imgSiteLu{
+    width: 110.78px;
+    height: 125px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+#lofcHeader{
+    margin-top: 30px;
+    position: relative;
+    width: 115px;
+    height: 128px;
+}
+
+#bigBrownBorder{
+    position: relative;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+#coffeeLink{
+    width: 125px;
+    height: 104.93px;
+    margin-top: 3px;
+    margin-right: 1px;
+}
+
+#coffeeProjetosLi{
+    margin-top: 80px;
+    cursor: pointer;  
+}
+
+#lofcProjetosL{
+    margin-top: -20px;
+}
+
+#coffeeProjetosImg{
+    width: 75px;
+    height: 62.86px;
+    position: relative;
+    top: 2px;
+    left: 4px;
+
+}
+
+#imgBorderTest{
+    width: 75px;
+    height: 62.86px;
+}
+
+.marginABrown{
+    display: flex;
+}
+
+#miniBrownBorder{
+    width: 85px;
+    height: 66.86px;
+    position: relative;
+    left: 175px;
+    top: -52px;
+    vertical-align: 5px;
+}
+
+.marginABrown::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+.marginABrown:hover::before {
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    20% {
+        width: 100%;
+        height: 0;
+        border-top-color: rgb(103, 60, 41);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    40% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: rgb(103, 60, 41);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    60% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    80% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+.marginABrown::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.marginABrown:hover::after {
+    animation: animates 2s linear forwards;
+}
+
+@keyframes animates {
+    
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    20% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    40% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    60% {
+        width: 100%;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(103, 60, 41);
+        border-left-color: transparent;
+    }
+
+    80% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(103, 60, 41);
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+
+/*           BLACK MARGIN        */
+
+.marginABlack{
+    position: relative;
+    display: flex;
+}
+
+#miniBorderBlack{
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    left: 10px;
+    top: 35px;
+    width: 70px;
+    height: 75px;
+}
+
+.marginABlack::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+.marginABlack:hover::before {
+    animation: animateBl 2s linear forwards;
+}
+
+@keyframes animateBl {
+
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    20% {
+        width: 100%;
+        height: 0;
+        border-top-color: black;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    40% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: black;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    60% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    80% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+.marginABlack::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.marginABlack:hover::after {
+    animation: animatesBl 2s linear forwards;
+}
+
+@keyframes animatesBl {
+    
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    20% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    40% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    60% {
+        width: 100%;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: black;
+        border-left-color: transparent;
+    }
+
+    80% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: black;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+
+
+
+#lofcProjetosL{
+    cursor: pointer;
+}
+
+#lofcProjetosImg{
+    width: 66.47px;
+    height: 75px;
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    display: inline-block;
+    left: 3px;
+    padding-top: 2px;
+}
+
+#mainContainer{
+    width: calc(100% - 225px);
+    height: 1350px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: rgb(103, 60, 41);
+    text-align: center;
+}
+
+#contentMain{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1250px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.titlesContentMain{
+    margin-top: 80px;
+}
+
+.listsResume{
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.li{
+    margin-top: 20px;
+}
+
+.marginSubT{
+    margin-left: 22px;
+}
+
+.ibm400{
+    font-weight: 400;
+}
+
+@media screen and (max-height:550px){
+    
+    #imgDiv, #face{
+        width:90px;
+        height:90px;
+    }
+
+    #name{
+        font-size: 17px;
+        margin-top: 20PX;
+    }
+
+    .subTHeader{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    #imgSiteLu, #lofcHeader{
+        width: 79.77px;
+        height: 90px;
+    }
+
+    #coffeeLink, #bigBrownLink{
+        width: 90px;
+        height: 84px;
+    }
+}
+
+@media screen and (max-height:430px){
+    #imgDiv{
+        display: none;
+    }
+    
+    #name{
+        margin-top: 0;
+    }
+
+    #lofcHeader{
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:760px){
+    
+    header{
+        position: relative;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #imgDiv{
+        display: inline-block;
+    }
+
+    #mainContainer{
+        width: 100%;
+    }
+
+    #wrapLinks{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #divLofcHeader{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    #bigBrownBorder{
+        
+        height: 110px;
+        top: 30px;
+    }
+
+    #lofcHeader{
+        
+        margin-left:10px;
+    }
+
+    #imgSiteLu{
+        width: 110.78px;
+        height: 125px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    #divCoffeeHeader{
+        cursor: pointer;
+        width: 130px;
+        height: 115px;
+    }
+    
+    
+    #lofcHeader{
+        margin-top: 30px;
+        position: relative;
+        width: 115px;
+        height: 128px;
+    }
+    
+    #coffeeLink{
+        width: 125px;
+        height: 104.93px;
+        margin-top: 3px;
+    }
+
+    #imgDiv{
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    #face{
+        width: 125px;
+        height: 125px;
+    }
+    
+    
+    #infoHeader{
+        width: 220px;
+        height: 125px;
+    }
+    #name{
+        font-size: 25px;
+        margin-top: 0;
+    }
+    
+    .subTHeader{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:650px){
+    #bigBrownBorder, #coffeeLink{
+        width: 80px;
+        height: 67.15px;
+    }
+
+    #coffeeLink{
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    #bigBrownBorder{
+        top: 20px;
+    }
+
+    #lofcHeader, #imgSiteLu{
+        width: 70.9px;
+        height: 80px;
+    }
+
+    #lofcHeader{
+        margin-top: 40px;
+    }
+
+    #wrapLinks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #divLofcHeader{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .lineBreak:before{
+        content: ' ';
+        display: block;
+    }
+
+    .lineBreak{
+        left: 20px;
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+
